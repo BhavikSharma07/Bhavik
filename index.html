@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of a Professional Full Stack .NET Developer. Specializing in ASP.NET Core, MVC, Web API, and Cloud Architecture.">
+    <meta name="keywords" content=".NET Developer, ASP.NET Core, C#, Web API, SQL Server, Full Stack, Portfolio">
+    <meta name="author" content=".NET Developer">
+    <title>.NET Architect | Full Stack Developer Portfolio</title>
+
+    <!-- Google Fonts: Outfit (Modern, Geometric) & JetBrains Mono (Code) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Devicon -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Noise Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Mouse Follower -->
+    <div class="cursor-glow"></div>
+
+    <!-- Navigation (Minimal Fixed) -->
+    <nav class="navbar">
+        <div class="logo">&lt;Bhavik Sharma/&gt;</div>
+        <div class="menu-items">
+            <a href="#hero">Start</a>
+            <a href="#projects">Work</a>
+            <a href="#experience">Exp</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 1. HERO SECTION -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-gradient"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="terminal-badge">
+                        <i class="fas fa-terminal"></i> <span>dotnet run portfolio</span>
+                    </div>
+                    <h1 class="glitch-text" data-text="I build scalable .NET web applications">I build scalable
+                        <br><span class="highlight">.NET web applications</span>
+                    </h1>
+                    <div class="typing-container">
+                        <span class="typing-text"></span><span class="cursor">|</span>
+                    </div>
+
+                    <div class="cta-group">
+                        <a href="#projects" class="btn btn-primary">View Work <i class="fas fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+
+                <!-- Floating Code Snippet Visual -->
+                <div class="hero-visual">
+                    <div class="code-card glass">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="filename">Program.cs</span>
+                        </div>
+                        <pre><code class="language-csharp">
+public class Developer : IArchitect
+{
+    public string MainFocus => "Scalability";
+    
+    public void Build() 
+    {
+        // Crafting clean code...
+        var solution = new EnterpriseApp();
+        solution.Deploy();
+    }
+}
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. INTRO / IDENTITY -->
+        <section id="identity" class="identity-section">
+            <div class="container">
+                <h2 class="section-title reveal-text">Developer by logic. <br> <span class="highlight-text">Architect by
+                        mindset.</span></h2>
+                <div class="bio-content reveal-up">
+                    <p>I don't just write code; I design ecosystems. With deep expertise in the .NET ecosystem, I bridge
+                        the gap between complex backend logic and seamless user experiences. Specializing in
+                        high-performance SaaS platforms and enterprise-grade solutions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. TECH STACK -->
+        <section id="tech" class="tech-section">
+            <div class="container">
+                <h3 class="subsection-title">Core Technology Stack</h3>
+                <div class="tech-carousel-wrapper">
+                    <div class="tech-track">
+                        <!-- Items will be duplicated for infinite scroll via JS or CSS -->
+                        <div class="tech-card glass"><i class="devicon-dotnet-plain"></i>ASP.NET Core</div>
+                        <div class="tech-card glass"><i class="devicon-csharp-plain"></i>C#</div>
+                        <div class="tech-card glass"><i class="fas fa-database"></i>SQL Server</div>
+                        <div class="tech-card glass"><i class="fas fa-project-diagram"></i>Entity Framework</div>
+                        <div class="tech-card glass"><i class="devicon-docker-plain"></i>Docker</div>
+                        <div class="tech-card glass"><i class="devicon-azure-plain"></i>Azure</div>
+                        <div class="tech-card glass"><i class="fas fa-network-wired"></i>REST API</div>
+                        <div class="tech-card glass"><i class="devicon-javascript-plain"></i>JavaScript</div>
+                        <div class="tech-card glass"><i class="devicon-html5-plain"></i>HTML5</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. FEATURED PROJECTS -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Selected Works</h2>
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass reveal-up">
+                        <div class="project-content">
+                            <div class="project-meta">SaaS Platform</div>
+                            <h3>Digital Visiting Card</h3>
+                            <p>A multi-tenant SaaS for creating and managing digital identities. Features QR generation,
+                                VCF exports, and analytics.</p>
+                            <div class="tech-chips">
+                                <span>.NET 8</span><span>MVC</span><span>SQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-btn">Live Demo</a>
+                                <a href="#" class="icon-btn"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-preview">
+                            <div class="mockup-placeholder"></div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass reveal-up">
+                        <div class="project-content">
+                            <div class="project-meta">FinTech API</div>
+                            <h3>Payment Gateway Core</h3>
+                            <p>Secure payment processing middleware bridging multiple providers with unified wrapper
+                                implementation.</p>
+                            <div class="tech-chips">
+                                <span>Web API</span><span>Azure Functions</span><span>Redis</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-btn">Documentation</a>
+                                <a href="#" class="icon-btn"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-preview">
+                            <div class="mockup-placeholder"></div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass reveal-up">
+                        <div class="project-content">
+                            <div class="project-meta">Web Platform</div>
+                            <h3>Freshport</h3>
+                            <p>Built and maintained the Freshport website, focusing on high-performance frontend and
+                                seamless UI/UX interactions.</p>
+                            <div class="tech-chips">
+                                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-btn">Live Site</a>
+                            </div>
+                        </div>
+                        <div class="project-preview">
+                            <div class="mockup-placeholder"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. ARCHITECTURE MINDSET -->
+        <section id="architecture" class="arch-section">
+            <div class="container">
+                <div class="arch-content">
+                    <h2>System Design First</h2>
+                    <p>Writing code is easy. Designing systems that scale, maintain data integrity, and handle
+                        concurrency is where the real engineering happens.</p>
+                </div>
+                <div class="arch-visual">
+                    <!-- SVG Animation Placeholder -->
+                    <svg class="arch-svg" viewBox="0 0 800 400">
+                        <path class="flow-line" d="M50,200 Q200,50 400,200 T750,200" stroke="#00f3ff" fill="none"
+                            stroke-width="2" />
+                        <circle cx="50" cy="200" r="10" fill="#bc13fe" />
+                        <circle cx="400" cy="200" r="10" fill="#bc13fe" />
+                        <circle cx="750" cy="200" r="10" fill="#bc13fe" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. EXPERIENCE -->
+        <section id="experience" class="exp-section">
+            <div class="container">
+                <h2 class="section-title">The Journey</h2>
+                <div class="timeline">
+                    <div class="timeline-item reveal-left">
+                        <div class="content">
+                            <h3>.NET Developer</h3>
+                            <span class="company"></span>
+                            <p>Leading the backend modernization of legacy monoliths to microservices.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-right">
+                        <div class="content">
+                            <h3>Full Stack Developer</h3>
+                            <span class="company">Innovate Digital</span>
+                            <p>Full lifecycle development of enterprise web applications using ASP.NET Core.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CONTACT -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Let's build something <span class="highlight">scalable.</span></h2>
+                <form class="contact-form glass">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message via API</button>
+                </form>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Designed & built with passion using modern web technologies. &copy; 2025</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
