@@ -877,6 +877,29 @@ section {
     transform: translateY(-3px);
 }
 
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-info-panel {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .profile-photo {
+        margin: 0 auto 20px;
+    }
+
+    .contact-form {
+        width: 100%;
+        min-width: auto;
+        padding: 25px;
+    }
+}
+
 /* --- Animations --- */
 .reveal-text,
 .reveal-up {
