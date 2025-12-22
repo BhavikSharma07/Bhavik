@@ -732,7 +732,72 @@ section {
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-info-panel {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile-photo {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--primary-accent);
+    margin-bottom: 25px;
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.direct-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: var(--font-mono);
+    font-size: 1rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--text-muted);
+}
+
+.contact-form {
+    flex: 1.5;
+    min-width: 320px;
+    max-width: 600px;
     padding: 40px;
+}
+
+.contact-item i {
+    color: var(--primary-accent);
+}
+
+.contact-item a:hover {
+    color: var(--primary-accent);
+    text-decoration: underline;
 }
 
 .form-group {
@@ -767,6 +832,21 @@ section {
 .form-group textarea {
     min-height: 120px;
     resize: vertical;
+}
+
+.contact-form .btn-primary {
+    background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent), var(--primary-accent));
+    background-size: 200% auto;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: gradientMove 3s linear infinite;
+}
+
+.contact-form .btn-primary:hover {
+    box-shadow: 0 0 15px var(--primary-accent);
+    transform: translateY(-2px);
 }
 
 .footer {
