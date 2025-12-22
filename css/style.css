@@ -771,10 +771,30 @@ section {
 
 .footer {
     padding: 40px;
-    text-align: center;
     border-top: 1px solid var(--border-color);
     font-size: 0.9rem;
     color: var(--text-muted);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--primary-accent);
+    transform: translateY(-3px);
 }
 
 /* --- Animations --- */
